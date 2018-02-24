@@ -30,5 +30,5 @@ Included on example folder, available on Arduino IDE.
 ## Who do I talk to? ##
 
  * [Naguissa](https://github.com/Naguissa)
- * https://www.foroelectro.net
+ * https://www.foroelectro.net/electronica-digital-microcontroladores-f8/umfmlib-libreria-para-codificar-y-decodificar-stre-t196.html
  * https://www.naguissa.com
