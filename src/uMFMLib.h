@@ -5,7 +5,7 @@
  * @copyright Naguissa
  * @author Naguissa
  * @email naguissa@foroelectro.net
- * @version 0.1.0
+ * @version 0.2.0
  * @created 2018-02-24
  */
 #ifndef _UMFMLIB_
@@ -25,10 +25,17 @@
 			// Constructors
 			uMFMLib();
 			void reset();
-			void setType(unsigned char);
+			void setType(uint8_t);
 
-			unsigned char encode(bool);
-			unsigned char decode(bool);
+			uint8_t encode(bool);
+			uint16_t encode(uint8_t);
+			uint32_t encode(uint16_t);
+
+			uint8_t decode(bool);
+
+			uint8_t decode(uint8_t);
+			uint8_t decode(uint16_t);
+			uint16_t decode(uint32_t);
 
 			const bool syncMark[15] = {1,0,0,0,1,0,0,1,0,0,0,1,0,0,1}; // 1st bit is missing
 
@@ -38,9 +45,9 @@
 			// Adresses
 			bool _last;
 			bool _lastType;
-			unsigned char _type = UMFMFLIB_TYPE_MFM;
+			uint8_t _type = UMFMFLIB_TYPE_MFM;
 
-			unsigned char _syncState;
+			uint8_t _syncState;
 
 
 
