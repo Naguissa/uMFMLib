@@ -1,5 +1,7 @@
 # All Arduino compatible uMFMLib #
 
+Master status:   [![Build Status](https://travis-ci.org/Naguissa/uMFMLib.svg?branch=master)](https://travis-ci.org/Naguissa/uMFMLib)
+
 ## What is this repository for? ##
 
 Tiny lib to enode and decode FM and MFM data streams.
